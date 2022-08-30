@@ -1,0 +1,29 @@
+<!-- Learn Javascript Syntax For Dummies  -->
+<!-- IAW Tutorials  -->
+<!--  https://www.youtube.com/watch?v=MgJVMeB0ESw  -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title> <!-- Aqui Javascript é apenas o título da página -->
+  </head>
+  <body>
+
+    <button onclick="clickMe('Botão passou esse texto como parâmetro tipo string para a função ClickMe')">Click me!</button>
+   
+    <button onclick="clickNum(5)">O número sob o botão é ? </button>
+
+   <script>
+      function clickMe(x){ 
+        alert("Executei a função clickMe. " + x)  
+      }   
+  
+      function clickNum(numero){ 
+        alert("que o número passado pelo botão foi " + numero)  
+      }  
+
+      let numero = 0 
+    </script>
+  </body>
+</html>
