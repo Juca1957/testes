@@ -12,23 +12,39 @@
 
     <button onclick="clickMe('Botão passou esse texto como parâmetro tipo string para a função ClickMe')">Click me!</button>
    
+    <br><br>
+
     <button onclick="clickNum(7)">O número sob o botão é </button>  
+
+    <br><br>
 
     <button onclick="soma(5,3)">A soma de 5 e 3 é :</button>
 
+    <br><br>
+
+    <button onclick="clickMeToo('<strong> I was clicked! </strong>')">Click me too! </button>
+
+      <div id="changeme">
+      
+      </div>     
+
    <script>
 
-      function clickMe(x){ 
+      function clickMe(x) { 
         alert("Executei a função clickMe. " + x)  
       }   
   
-      function clickNum(numero){ 
+      function clickNum(numero) { 
         alert("que o número passado pelo botão foi " + numero)  
       }  
 
       function soma(x,y) {
         z = x + y
         alert("que a soma de 5 e 3 é " + z )
+      }
+
+      function clickMeToo(x) {
+        document.getElementById('changeme').innerHTML = x 
       }
 
     </script>
